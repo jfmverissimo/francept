@@ -1,0 +1,35 @@
+@media only Screen and (min-width: 992px) {
+	#p10985141219012100 {
+	height: calc(100vh - 41px)!important;	
+	min-height:600px !important;
+  }
+}
+
+#p1100912015667210.LanguageFlag {
+	z-index:10000!important;
+} 
+
+.propertyLocation .loc-level-2{
+	display:none!important;
+	
+}
+.loc-level-3 .loc-level-sep{
+	display:none!important;;
+}
+
+.SiteMenu.Element.MobileMenuSkin{
+	position:absolute!important;
+		
+}
+
+.fixA {
+    position: fixed !important;
+    top: 80px !important;
+    width:435px!important;
+}
+.fixB {
+    position: absolute;
+    top: inherit;
+    bottom: 10px;
+    width:435px!important;
+}
