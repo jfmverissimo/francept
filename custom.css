@@ -37,3 +37,9 @@
 .propertyBasicListFullResp .filterHeader{
   display:none!important;
 } 
+
+.propertyBasicListFullResp .advancedFilter{
+  margin: 0 -9999rem;
+  padding: 0.25rem 9999rem;
+  background: #e5e4e0;
+}
