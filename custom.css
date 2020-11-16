@@ -33,3 +33,7 @@
     bottom: 10px;
     width:435px!important;
 }
+
+.propertyBasicListFullResp .filterHeader{
+  display:none;
+} 
