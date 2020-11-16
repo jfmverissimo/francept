@@ -35,5 +35,5 @@
 }
 
 .propertyBasicListFullResp .filterHeader{
-  display:none;
+  display:none!important;
 } 
