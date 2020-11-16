@@ -43,3 +43,9 @@
   padding: 0.25rem 9999rem;
   background: #e5e4e0;
 }
+
+.Element.PropertyBasicListFullResp.top-filter .form-field-content.filterField {
+  width: calc(100% / 5 - 16px);
+  margin-right: 20px; }
+  .Element.PropertyBasicListFullResp.top-filter .form-field-content.filterField:nth-child(5n+5) {
+    margin-right: 0; }
