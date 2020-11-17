@@ -1,6 +1,6 @@
 @media only Screen and (min-width: 992px) {
 	#p10985141219012100 {
-	height: calc(100vh - 41px)!important;	
+	height: calc(100vh - 36px)!important;	
 	min-height:600px !important;
   }
 }
@@ -47,5 +47,5 @@
 .Element.PropertyBasicListFullResp.top-filter .form-field-content.filterField {
   width: calc(100% / 5 - 16px);
   margin-right: 20px; }
-  .Element.PropertyBasicListFullResp.top-filter .form-field-content.filterField:nth-child(5n+5) {
+  .Element.PropertyBasicListFullResp.top-filter .elementContainer.ContainerStyle .form-field-content.filterField:nth-child(5n+5) {
     margin-right: 0; }
