@@ -45,7 +45,9 @@
 }
 
 .Element.PropertyBasicListFullResp.top-filter .form-field-content.filterField {
-  width: calc(100% / 5 - 16px);
+  width: calc(100% / 5 - 16px! important;
   margin-right: 20px; }
+  .Element.PropertyBasicListFullResp.top-filter .elementContainer.ContainerStyle .form-field-content.filterField:nth-child(4n+4) {
+    margin-right: 20px!important;}
   .Element.PropertyBasicListFullResp.top-filter .elementContainer.ContainerStyle .form-field-content.filterField:nth-child(5n+5) {
-    margin-right: 0; }
+    margin-right: 0!important;}
