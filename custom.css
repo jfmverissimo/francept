@@ -60,3 +60,10 @@
   max-width: 1680px!important;
   margin: 0 auto!important;
 }
+.PropertyBasicList .listViewBtn{
+  display: none;
+} 
+
+.Element.PropertyBasicListFullResp.top-filter .fieldsWrapper .searchBtn{
+  width: calc(100% / 5 - 16px)!important;
+}
