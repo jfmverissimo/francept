@@ -64,7 +64,7 @@
   display: none;
 } 
 div.Element.LanguageFlag .lang-select .lang-wrapper .lang-selected .drop-arrow text{
-  font-size:14px;
+  font-size:16px!important;
 }
 .Element.PropertyBasicListFullResp.top-filter .fieldsWrapper .searchBtn{
   width: calc(100% / 5 - 16px)!important;
