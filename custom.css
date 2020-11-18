@@ -7,7 +7,11 @@
 
 #p1100912015667210.LanguageFlag {
 	z-index:10000!important;
-} 
+}
+
+#p1110512614211065.LanguageFlag{
+	z-index:10000!important;
+}
 
 .propertyLocation .loc-level-2{
 	display:none!important;
@@ -45,9 +49,14 @@
 }
 
 .Element.PropertyBasicListFullResp.top-filter .form-field-content.filterField {
-  width: calc(100% / 5 - 16px! important;
+  width: calc(100% / 5 - 16px)!important;
   margin-right: 20px; }
   .Element.PropertyBasicListFullResp.top-filter .elementContainer.ContainerStyle .form-field-content.filterField:nth-child(4n+4) {
     margin-right: 20px!important;}
   .Element.PropertyBasicListFullResp.top-filter .elementContainer.ContainerStyle .form-field-content.filterField:nth-child(5n+5) {
     margin-right: 0!important;}
+
+#p11101051291328751 .sectionBody {
+  max-width: 1680px!important;
+  margin: 0 auto!important;
+}
