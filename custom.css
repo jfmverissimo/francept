@@ -1,71 +1,89 @@
+/*Homepage full-screen*/
 @media only Screen and (min-width: 992px) {
-	#p10985141219012100 {
-	height: calc(100vh - 36px)!important;	
-	min-height:600px !important;
+  #p10985141219012100 {
+    height: calc(100vh - 36px) !important;
+    min-height: 600px !important;
   }
 }
 
+/*Language drop-down correction*/
 #p1100912015667210.LanguageFlag {
-	z-index:10000!important;
+  z-index: 10000 !important;
 }
 
-#p1110512614211065.LanguageFlag{
-	z-index:10000!important;
+#p1110512614211065.LanguageFlag {
+  z-index: 10000 !important;
 }
 
-.propertyLocation .loc-level-2{
-	display:none!important;
-	
-}
-.loc-level-3 .loc-level-sep{
-	display:none!important;;
+/*Hide district from property lists*/
+.propertyLocation .loc-level-2 {
+  display: none !important;
+
 }
 
-.SiteMenu.Element.MobileMenuSkin{
-	position:absolute!important;
-		
+.loc-level-3 .loc-level-sep {
+  display: none !important;
+  ;
 }
 
+/*menu position correction*/
+.SiteMenu.Element.MobileMenuSkin {
+  position: absolute !important;
+}
+
+/*floating contact form - still needs fix here and JS*/
 .fixA {
-    position: fixed !important;
-    top: 80px !important;
-    width:435px!important;
+  position: fixed !important;
+  top: 80px !important;
+  width: 435px !important;
 }
+
 .fixB {
-    position: absolute;
-    top: inherit;
-    bottom: 10px;
-    width:435px!important;
+  position: absolute;
+  top: inherit;
+  bottom: 10px;
+  width: 435px !important;
 }
 
-.propertyBasicListFullResp .filterHeader{
-  display:none!important;
-} 
+/*hide title in widescreen search filter*/
+@media only Screen and (min-width: 1121px) {
+  .propertyBasicListFullResp .filterHeader {
+    display: none !important;
+  }
 
-.propertyBasicListFullResp .advancedFilter{
-  margin: 0 -9999rem;
-  padding: 0.25rem 9999rem;
-  background: #e5e4e0;
-}
+  .propertyBasicListFullResp .advancedFilter {
+    margin: 0 -9999rem;
+    padding: 0.25rem 9999rem;
+    background: #e5e4e0;
+  }
 
-.Element.PropertyBasicListFullResp.top-filter .form-field-content.filterField {
-  width: calc(100% / 5 - 16px)!important;
-  margin-right: 20px; }
+  .Element.PropertyBasicListFullResp.top-filter .form-field-content.filterField {
+    width: calc(100% / 5 - 16px) !important;
+    margin-right: 20px;
+  }
+
   .Element.PropertyBasicListFullResp.top-filter .elementContainer.ContainerStyle .form-field-content.filterField:nth-child(4n+4) {
-    margin-right: 20px!important;}
+    margin-right: 20px !important;
+  }
+
   .Element.PropertyBasicListFullResp.top-filter .elementContainer.ContainerStyle .form-field-content.filterField:nth-child(5n+5) {
-    margin-right: 0!important;}
+    margin-right: 0 !important;
+  }
+
+  #p94130141335110310_absfill .searchBtn {
+    width: calc(100% / 5 - 16px) !important;
+  }
+}
 
 #p11101051291328751 .sectionBody {
-  max-width: 1680px!important;
-  margin: 0 auto!important;
+  max-width: 1680px !important;
+  margin: 0 auto !important;
 }
-.PropertyBasicList .listViewBtn{
+
+.PropertyBasicList .listViewBtn {
   display: none;
-} 
-div.Element.LanguageFlag .lang-select .lang-wrapper .lang-selected .drop-arrow text{
-  font-size:16px!important;
 }
-#p94130141335110310_absfill .searchBtn{
-  width: calc(100% / 5 - 16px)!important;
+
+div.Element.LanguageFlag .lang-select .lang-wrapper .lang-selected .drop-arrow text {
+  font-size: 16px !important;
 }
