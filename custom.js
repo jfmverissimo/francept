@@ -16,7 +16,7 @@ $(document).ready(function () {
             var mBool = true;
             if ($(window).innerWidth() > 768) {
                 var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
-                var HImos = $('.propertyInfo .detailContainer').height() - $('.propertyContactForm');
+                var HImos = $('.propertyInfo .mainContent').height() - $('.propertyContactForm');
 
                 if (mBool) {
                     if ($(".PropertyBasicDetail").length) {
