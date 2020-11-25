@@ -16,11 +16,11 @@ $(document).ready(function () {
             var mBool = true;
             if ($(window).innerWidth() > 768) {
                 var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
-                var HImos = $('.propertyInfo .mainContent').height() - $('.propertyContactForm');
+                var HImos = $('.propertyInfo .mainContent').height() - $('.propertyContactForm .elementContainer');
 
                 if (mBool) {
                     if ($(".PropertyBasicDetail").length) {
-                        if (scrollTop > 180) {
+                        if (scrollTop > 220) {
                             $('.Element.PropertyBasicDetail .propertyContactForm').addClass('fixA');
                         } else {
                             $('.Element.PropertyBasicDetail .propertyContactForm').removeClass('fixA');
