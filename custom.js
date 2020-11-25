@@ -5,8 +5,7 @@ function adjustWidth() {
 
 $(document).ready(function () {
 
-    headerToForm = $('.PropertyBasicDetail .mainContent').offset();
-    topToFormNoHeader= headerToForm.top-85;
+    headerToForm = $('.PropertyBasicDetail .mainContent').offset().top-85;
 
 
 
@@ -20,11 +19,11 @@ $(document).ready(function () {
             var mBool = true;
             if ($(window).innerWidth() > 768) {
                 var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
-                var HImos = (topToFormNoHeader + $('.PropertyBasicDetail .mainContent').height()) - $('.propertyContactForm .elementContainer').height();
+                var HImos = (headerToForm + $('.PropertyBasicDetail .mainContent').height()) - $('.propertyContactForm .elementContainer').height();
 
                 if (mBool) {
                     if ($(".PropertyBasicDetail").length) {
-                        if (scrollTop > topToFormNoHeader) {
+                        if (scrollTop > headerToForm) {
                             $('.Element.PropertyBasicDetail .propertyContactForm').addClass('fixA');
                         } else {
                             $('.Element.PropertyBasicDetail .propertyContactForm').removeClass('fixA');
