@@ -20,7 +20,7 @@ $(document).ready(function () {
 
                 if (mBool) {
                     if ($(".PropertyBasicDetail").length) {
-                        if (scrollTop > 220) {
+                        if (scrollTop > 218) {
                             $('.Element.PropertyBasicDetail .propertyContactForm').addClass('fixA');
                         } else {
                             $('.Element.PropertyBasicDetail .propertyContactForm').removeClass('fixA');
