@@ -23,7 +23,7 @@ $(document).ready(function () {
 
                 if (mBool) {
                     if ($(".PropertyBasicDetail").length) {
-                        if (scrollTop > HImos) {
+                        if (scrollTop > headerToForm) {
                             $('.Element.PropertyBasicDetail .propertyContactForm').addClass('fixA');
                         } else {
                             $('.Element.PropertyBasicDetail .propertyContactForm').removeClass('fixA');
