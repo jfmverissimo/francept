@@ -4,9 +4,9 @@ function adjustWidth() {
 }
 
 $(document).ready(function () {
-
-    headerToForm = $('.PropertyBasicDetail .mainContent').offset().top-85;
-
+    
+    h= $('.PropertyBasicDetail .mainContent').offset();
+    headerToForm=h.top-85;
 
 
     $(window).resize(
