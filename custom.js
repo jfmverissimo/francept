@@ -23,7 +23,7 @@ $(document).ready(function () {
 
                 if (mBool) {
                     if ($(".PropertyBasicDetail").length) {
-                        if (scrollTop > headerToForm) {
+                        if (scrollTop > 216) {
                             $('.Element.PropertyBasicDetail .propertyContactForm').addClass('fixA');
                         } else {
                             $('.Element.PropertyBasicDetail .propertyContactForm').removeClass('fixA');
