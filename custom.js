@@ -3,27 +3,35 @@ function adjustWidth() {
     $(".propertyContactForm").width(parentwidth);
 }
 
+function calculateHeight(){
+    var topMargin = $('.PropertyBasicDetail .mainContent');
+    if (topMargin){
+        headerToForm=topMargin.offset().top-85;
+        return headerToForm;
+    }
+    else {
+        console.log('Já foste');
+    }
+}
+
 $(document).ready(function () {
-    
-    h= $('.PropertyBasicDetail .mainContent').offset();
-    headerToForm=h.top-85;
-
-
+ 
     $(window).resize(
         function () {
             adjustWidth();
-        });
-
-    $(window).scroll(
+    });  
+   
+    if ($(".PropertyBasicDetail").length) {        
+        $(window).scroll(
         function () {
             var mBool = true;
             if ($(window).innerWidth() > 768) {
+                headerToForm = calculateHeight();
                 var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
                 var HImos = (headerToForm + $('.PropertyBasicDetail .mainContent').height()) - $('.propertyContactForm .elementContainer').height();
 
                 if (mBool) {
-                    if ($(".PropertyBasicDetail").length) {
-                        if (scrollTop > 216) {
+                        if (scrollTop > headerToForm) {
                             $('.Element.PropertyBasicDetail .propertyContactForm').addClass('fixA');
                         } else {
                             $('.Element.PropertyBasicDetail .propertyContactForm').removeClass('fixA');
@@ -36,7 +44,6 @@ $(document).ready(function () {
                             $('.Element.PropertyBasicDetail .asideContent').removeClass('fixB');
                         }
                     }
-                }
                 /**/
                 if (scrollTop < HImos) {
                     mBool = true;
@@ -44,5 +51,5 @@ $(document).ready(function () {
                 }
             }
         });
+};
 });
-
