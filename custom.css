@@ -56,7 +56,7 @@
   .propertyBasicListFullResp .advancedFilter {
     margin: 0 -9999rem;
     padding: 0.25rem 9999rem;
-    background: #e5e4e0;
+    background: #cb9856!important;
   }
   
 }
@@ -66,6 +66,10 @@
     padding: 0.25rem 9999rem;
     background: #e5e4e0;
   }
+
+  .propertyBasicListFullResp .advancedFilter  .searchBtn .elementContainer.ContainerStyle {
+    background: #cb9856!important;
+  } 
   
 }
 
