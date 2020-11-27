@@ -3,40 +3,38 @@ function adjustWidth() {
     $(".propertyContactForm").width(parentwidth);
 }
 
-function calculateHeight(){
-    var topMargin = $('.PropertyBasicDetail .mainContent');
-    if (topMargin){
-        headerToForm=topMargin.offset().top-85;
-        return headerToForm;
-    }
-    else {
-        console.log('Já foste');
-    }
-}
-
 $(document).ready(function () {
- 
+
+
     $(window).resize(
         function () {
             adjustWidth();
-    });  
-   
-    if ($(".PropertyBasicDetail").length) {        
-        $(window).scroll(
-        function () {
-            var mBool = true;
-            if ($(window).innerWidth() > 768) {
-                headerToForm = calculateHeight();
-                var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
-                var HImos = (headerToForm + $('.PropertyBasicDetail .mainContent').height()) - $('.propertyContactForm .elementContainer').height();
+        });
 
+    $(window).scroll(
+
+        function () {
+            if ($(window).innerWidth() < 801) {
+                $('.Element.PropertyBasicDetail .asideContent').removeClass('fixB');
+                $('.Element.PropertyBasicDetail .propertyContactForm').removeClass('fixA');
+            }
+            else {
+                var mBool = true;
+                var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+                
+                var lockFormHeight = $('.PropertyBasicDetail .mainContent').offset().top - $('.PageHeader').height()
+                var formSize = $('.propertyContactForm .elementBorder.BoxStyle').height();
+                var secondLockHeight = $('.PropertyBasicDetail .mainContent').height() + $('.PropertyBasicDetail .mainContent').offset().top - formSize;
+
+                /*imos */
                 if (mBool) {
-                        if (scrollTop > headerToForm) {
+                    if ($(".PropertyBasicDetail").length) {
+                        if (scrollTop > lockFormHeight) {
                             $('.Element.PropertyBasicDetail .propertyContactForm').addClass('fixA');
                         } else {
                             $('.Element.PropertyBasicDetail .propertyContactForm').removeClass('fixA');
                         }
-                        if (scrollTop > HImos) {
+                        if (scrollTop > secondLockHeight) {
                             $('.Element.PropertyBasicDetail .asideContent').addClass('fixB');
                             mBool = false;
                             $('.Element.PropertyBasicDetail .propertyContactForm').removeClass('fixA');
@@ -44,12 +42,13 @@ $(document).ready(function () {
                             $('.Element.PropertyBasicDetail .asideContent').removeClass('fixB');
                         }
                     }
-                /**/
-                if (scrollTop < HImos) {
+                }
+
+
+                if (scrollTop < secondLockHeight) {
                     mBool = true;
                     $('.Element.PropertyBasicDetail .asideContent').removeClass('fixB');
                 }
             }
         });
-};
 });
