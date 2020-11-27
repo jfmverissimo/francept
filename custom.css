@@ -45,17 +45,31 @@
   width: 435px !important;
 }
 
+/*Property list*/
+
+
 /*hide title in widescreen search filter*/
-@media only Screen and (min-width: 1121px) {
+@media only Screen and (min-width: 801px) {
   .propertyBasicListFullResp .filterHeader {
     display: none !important;
   }
-
   .propertyBasicListFullResp .advancedFilter {
     margin: 0 -9999rem;
     padding: 0.25rem 9999rem;
     background: #e5e4e0;
   }
+  
+}
+@media only Screen and (max-width: 800px) {
+  .propertyBasicListFullResp .advancedFilter .elementBorder.BoxStyle {
+    margin: 0 -9999rem;
+    padding: 0.25rem 9999rem;
+    background: #e5e4e0;
+  }
+  
+}
+
+@media only Screen and (min-width: 1121px) {
 
   .Element.PropertyBasicListFullResp.top-filter .form-field-content.filterField {
     width: calc(100% / 5 - 16px) !important;
@@ -74,6 +88,9 @@
     width: calc(100% / 5 - 16px) !important;
   }
 }
+
+/**/
+
 
 #p11101051291328751 .sectionBody {
   max-width: 1680px !important;
