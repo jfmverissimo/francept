@@ -35,14 +35,11 @@
 .fixA {
   position: fixed !important;
   top: 85px !important;
-  width: 435px !important;
 }
 
 .fixB {
   position: absolute;
   top: inherit;
-  bottom: 10px;
-  width: 435px !important;
 }
 
 /*Property list*/
