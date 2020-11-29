@@ -173,9 +173,7 @@
 
             if (base.options.removeOffsets) {
                 left = '';
-                top = top - offsetTop;
-                console.log(top);
-                console.log(offsetTop);
+                top = top - offsetTop + base.options.marginTop;
             }
 
             cssOptions={
