@@ -173,7 +173,9 @@
 
             if (base.options.removeOffsets) {
                 left = '';
-                top = top - offsetTop;;
+                top = top - offsetTop;
+                console.log(top);
+                console.log(offsetTop);
             }
 
             cssOptions={
