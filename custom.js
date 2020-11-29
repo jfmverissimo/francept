@@ -1,10 +1,22 @@
-function adjustWidth() {
+$(document).ready(function() {
+    $('.propertyContactForm').scrollToFixed({ marginTop: $('.PageHeader').height(), limit: $('.mainContent ').offset().top+ $('.mainContent ').height() - $('.propertyContactForm').height(),  offsets: true});
+});
+
+
+/* function adjustWidth() {
     var parentwidth = $(".asideContent").width();
     $(".propertyContactForm").width(parentwidth);
 }
 
 $(document).ready(function () {
 
+
+    var lockFormOnProperty ={
+        firstLock = null;
+        secondLock = null;
+        formSize = null;
+        formWidth = $('.asideContent').width();
+    }
 
     $(window).resize(
         function () {
@@ -20,13 +32,13 @@ $(document).ready(function () {
             }
             else {
                 var mBool = true;
-                var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
-                
+                var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;                
                 var lockFormHeight = $('.PropertyBasicDetail .mainContent').offset().top - $('.PageHeader').height()
                 var formSize = $('.propertyContactForm .elementBorder.BoxStyle').height();
                 var secondLockHeight = $('.PropertyBasicDetail .mainContent').height() + $('.PropertyBasicDetail .mainContent').offset().top - formSize;
 
-                /*imos */
+
+                //imos 
                 if (mBool) {
                     if ($(".PropertyBasicDetail").length) {
                         if (scrollTop > lockFormHeight) {
@@ -52,3 +64,4 @@ $(document).ready(function () {
             }
         });
 });
+ */
